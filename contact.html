@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- アイコン -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -32,7 +30,6 @@
           <h1 class="logo">mame</h1>
         </a>
 
-<main >
         <!-- ハンバーガー -->
         <div class="hamburger">
           <span></span>
@@ -43,7 +40,7 @@
         <nav class="nav">
           <ul>
             <li><a href="index.html">TOP</a></li>
-            <li><a href="in#about">ABOUT</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
             <li><a href="index.html#works">WORKS</a></li>
             <li><a href="index.html#skill">SKILL</a></li>
             <li><a href="#">CONTACT</a></li>
@@ -52,82 +49,78 @@
       </div>
     </header>
 
-    <!-- ===== Contact ===== -->
-    <section class="contact">
-      <div class="contact-inner">
-        <!-- タイトル -->
-        <div class="contact-heading">
-          <h2>CONTACT</h2>
-          <p>お問い合わせ</p>
+    <main>
+      <!-- ===== Contact ===== -->
+      <section class="contact">
+        <div class="contact-inner">
+          <div class="contact-heading">
+            <h2>CONTACT</h2>
+            <p>お問い合わせ</p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-item">
+              <label>お名前</label>
+              <input type="text" name="name" required />
+            </div>
+
+            <div class="form-item">
+              <label>メールアドレス</label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div class="form-item">
+              <label>お問い合わせ内容</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit">送信する</button>
+            </div>
+          </form>
         </div>
-
-        <!-- フォーム -->
-        <form class="contact-form">
-          <div class="form-item">
-            <label>お名前</label>
-            <input type="text" name="name" required />
-          </div>
-
-          <div class="form-item">
-            <label>メールアドレス</label>
-            <input type="email" name="email" required />
-          </div>
-
-          <div class="form-item">
-            <label>お問い合わせ内容</label>
-            <textarea name="message" rows="5" required></textarea>
-          </div>
-
-          <div class="form-submit">
-            <button type="submit">送信する</button>
-          </div>
-        </form>
-      </div>
-    </section>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-inner">
-        <!-- 上段 -->
         <div class="footer-top">
-          <!-- ロゴ -->
           <div class="footer-logo">
             <a href="index.html">
               <p>mame</p>
             </a>
           </div>
 
-          <!-- ナビ -->
           <nav class="footer-nav">
             <ul>
               <li><a href="index.html">TOP</a></li>
-              <li><a href="in#about">ABOUT</a></li>
+              <li><a href="index.html#about">ABOUT</a></li>
               <li><a href="index.html#works">WORKS</a></li>
               <li><a href="index.html#skill">SKILL</a></li>
               <li><a href="#">CONTACT</a></li>
             </ul>
           </nav>
 
-          <!-- SNS -->
           <div class="footer-sns">
             <a
               href="https://www.instagram.com/_mame5555?igsh=YThjaHd5Mjh5M2Q2&utm_source=qr"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="https://www.threads.com/@_mame5555?igshid=NTc4MTIwNjQ2YQ=="
-              ><i class="fa-brands fa-threads"></i
-            ></a>
-            <a href="https://x.com/__mame5555?s=21&t=Xrj8gj-cx_z5ETrhMC7AMg"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.threads.com/@_mame5555?igshid=NTc4MTIwNjQ2YQ=="
+            >
+              <i class="fa-brands fa-threads"></i>
+            </a>
+            <a href="https://x.com/__mame5555?s=21&t=Xrj8gj-cx_z5ETrhMC7AMg">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
           </div>
         </div>
 
-        <!-- 線 -->
         <div class="footer-line"></div>
 
-        <!-- コピー -->
         <div class="footer-copy">
           <p>© 2026 mame portfolio. All rights reserved.</p>
         </div>
@@ -135,5 +128,8 @@
 
       <a class="to-top" href="#"></a>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
