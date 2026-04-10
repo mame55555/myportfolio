@@ -1,4 +1,13 @@
 @use "mixin" as m;
+.page-contact {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+  }
+}
 
 .contact {
   padding: 120px 20px;

@@ -2,16 +2,12 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>portfolio</title>
-    <meta
-      name="description"
-      content="テキストテキストテキストテキストテキストテキストテキストテキスト"
-    />
+    <title>WORKS DETAIL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
+
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-    <!-- フォント先 -->
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +24,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body class="page-works">
+  <body>
     <!-- Header -->
     <header class="header">
       <div class="header-inner">
@@ -56,76 +52,85 @@
     </header>
 
     <main>
-      <!-- Works -->
-      <section class="works" id="works">
-        <div class="works-inner">
+      <!-- ===== Works Detail ===== -->
+      <section class="works-detail">
+        <div class="works-detail-inner">
+          <!-- タイトル -->
           <div class="works-heading">
             <h2>WORKS</h2>
             <p>制作物</p>
-
-            <ul class="works-nav">
-              <li><a href="#website">website</a></li>
-              <li><a href="#">banner</a></li>
-              <li><a href="#">graphic</a></li>
-            </ul>
           </div>
 
-          <!-- ===== website ===== -->
-          <div class="works-group" id="website">
-            <p class="works-category">website</p>
-
-            <div class="works-list">
-              <div class="works-card">
-                <a href="works-detail1.html">
-                  <div class="thumb">
-                    <img src="img/works1.png" alt="Think Kids Lab" />
-                  </div>
-                </a>
-                <h3>キッズプログラミングスクール　website</h3>
-                <p>デザインからコーディングまで全て行いました。</p>
-                <div class="tags">
-                  <span>Web design</span>
-                  <span>Branding</span>
-                  <span>coding</span>
-                  <span>UI/UX</span>
-                  <span>Responsive</span>
-                  <span>WordPress</span>
-                </div>
-              </div>
-
-              <div class="works-card">
-                <a href="works-detail2.html">
-                  <div class="thumb">
-                    <img src="img/works2.png" alt="ECサイト構築" />
-                  </div>
-                </a>
-                <h3>ポートフォリオサイト（当サイト）</h3>
-                <p>自身のポートフォリオサイトを作成しました。</p>
-                <div class="tags">
-                  <span>Web design</span>
-                  <span>coding</span>
-                  <span>Responsive</span>
-                </div>
-              </div>
-
-              <div class="works-card">
-                <a href="works-detail3.html">
-                  <div class="thumb">
-                    <img src="img/works3.png" alt="ブランディングデザイン" />
-                  </div>
-                </a>
-                <h3>ピラティススタジオ　website</h3>
-                <p>ノーコードツール　studioでWEBページを作成しました。</p>
-                <div class="tags">
-                  <span>Branding</span>
-                  <span>studio</span>
-                </div>
-              </div>
+          <!-- メイン画像 -->
+          <div class="works-visual">
+            <div class="device pc">
+              <img src="img/works3-pc.png" alt="PC表示" />
             </div>
 
-            <!-- <div class="works-more">
-            <a href="works-list.html">+ more</a>
-          </div> -->
+            <div class="device sp">
+              <img src="img/works3-sp.png" alt="スマホ表示" />
+            </div>
+          </div>
+
+          <!-- タグ -->
+          <div class="works-tags">
+            <span>自主制作</span>
+            <span>サービスサイト</span>
+          </div>
+
+          <!-- タイトル -->
+          <h3 class="works-title">ピラティススタジオ　website</h3>
+          <p class="works-meta">Planning / Design / Coding / Studio</p>
+
+          <!-- URL -->
+          <a href="https://example.com" class="works-link" target="_blank">
+            https://example.com
+          </a>
+
+          <!-- ===== 詳細 ===== -->
+          <div class="works-info">
+            <div class="info-block">
+              <h4>概要</h4>
+              <p>
+                ピラティススタジオの集客を目的とした架空のWEBサイトを制作しました。ノーコードツール「STUDIO」を使用し、初めての制作物として取り組みました。
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h4>工夫・意識したポイント</h4>
+              <p>
+                ターゲットである女性ユーザーを意識し、落ち着きと清潔感のあるデザインに仕上げました。直感的に情報を理解できるよう、導線やレイアウトの分かりやすさを重視しています。
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h4>使用ツール</h4>
+              <p>STUDIO / Figma</p>
+            </div>
+
+            <div class="info-block">
+              <h4>制作期間</h4>
+              <p>約1ヶ月</p>
+            </div>
+
+            <div class="info-block">
+              <h4>対応範囲</h4>
+              <p>構成設計 / デザイン / STUDIO実装</p>
+            </div>
+          </div>
+
+          <!-- ===== WEBページ画像 ===== -->
+          <div class="works-page">
+            <img
+              src="img/works3-pc-detail.png"
+              class="pc-page"
+              alt="TKL PC画面全体"
+            />
+            <!-- <img
+              src="img/works3-sp-detail.png"
+              class="sp-page"
+              alt="TKL SP画面全体"
+            /> -->
           </div>
         </div>
       </section>
@@ -135,22 +140,25 @@
       <div class="footer-inner">
         <!-- 上段 -->
         <div class="footer-top">
+          <!-- ロゴ -->
           <div class="footer-logo">
             <a href="index.html">
               <p>mame</p>
             </a>
           </div>
 
+          <!-- ナビ -->
           <nav class="footer-nav">
             <ul>
               <li><a href="index.html">TOP</a></li>
               <li><a href="index.html#about">ABOUT</a></li>
-              <li><a href="#works">WORKS</a></li>
-              <li><a href="#skill">SKILL</a></li>
+              <li><a href="index.html#works">WORKS</a></li>
+              <li><a href="index.html#skill">SKILL</a></li>
               <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </nav>
 
+          <!-- SNS -->
           <div class="footer-sns">
             <a
               href="https://www.instagram.com/_mame5555?igsh=YThjaHd5Mjh5M2Q2&utm_source=qr"
@@ -165,16 +173,15 @@
           </div>
         </div>
 
+        <!-- 線 -->
         <div class="footer-line"></div>
 
+        <!-- コピー -->
         <div class="footer-copy">
           <p>© 2026 mame portfolio. All rights reserved.</p>
         </div>
       </div>
-
-      <a class="to-top" href="#"></a>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
